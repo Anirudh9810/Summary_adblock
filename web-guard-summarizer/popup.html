@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGuard AI</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-area">
+        <div class="icon-circle">
+          <span class="shield-icon">🛡️</span>
+        </div>
+        <h1>WebGuard AI</h1>
+      </div>
+      <div class="status-badge" id="adblock-status">AdBlock Active</div>
+    </header>
+
+    <main>
+      <section class="action-card">
+        <h3>Page Summary</h3>
+        <p class="description">Get a concise AI-generated summary of the current page's content.</p>
+        <button id="summarize-btn" class="primary-btn">
+          <span class="btn-text">Summarize Now</span>
+          <div class="loader hidden"></div>
+        </button>
+      </section>
+
+      <div id="summary-result" class="summary-container hidden">
+        <div class="summary-header">
+          <span>AI Insight</span>
+          <button id="copy-summary" class="icon-btn" title="Copy to clipboard">📋</button>
+        </div>
+        <div id="summary-text" class="summary-content">
+          <!-- Summary content will be injected here -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Powered by Gemini AI</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
